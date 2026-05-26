@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SHONON — Catalog</title>
+  <meta name="description" content="SHONON — Browse items, choose size, order via WhatsApp (no payment)." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Layout -->
+  <div class="app">
+    <!-- LEFT SIDEBAR (always visible) -->
+    <aside class="sidebar" aria-label="Brands">
+      <div class="sidebar-top">
+        <div class="logo" title="SHONON">S</div>
+        <div class="sidebar-title">BRANDS</div>
+      </div>
+
+      <div class="sidebar-actions">
+        <a class="pill pill-green" id="waGeneric" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="pill" id="trackLink" target="_blank" rel="noopener">Tracking</a>
+      </div>
+
+      <div class="sidebar-search">
+        <input id="brandSearch" type="search" placeholder="Search brand..." />
+      </div>
+
+      <nav id="brandList" class="brand-list" aria-label="Brand list"></nav>
+
+      <div class="sidebar-note">
+        <!-- You can send a photo/internet link on WhatsApp → we'll tell you if we're selling. -->
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <header class="topbar">
+        <div class="topbar-left">
+          <h1 class="brandHeading" id="brandHeading">All products</h1>
+          <p class="muted" id="brandSub">
+            Click a product to see details, choose size.
+          </p>
+        </div>
+
+        <div class="topbar-right">
+          <div class="controls">
+            <input id="search" class="control" type="search" placeholder="Search product..." />
+            <select id="catFilter" class="control"></select>
+            <select id="sortBy" class="control">
+              <option value="featured">Sort: Featured</option>
+              <option value="priceLow">Sort: Price ↑</option>
+              <option value="priceHigh">Sort: Price ↓</option>
+              <option value="az">Sort: A → Z</option>
+              <option value="za">Sort: Z → A</option>
+            </select>
+          </div>
+        </div>
+      </header>
+
+      <section class="content">
+        <div id="grid" class="grid" aria-live="polite"></div>
+
+        <div id="empty" class="empty hidden">
+          <h3>No products</h3>
+          <p class="muted">Try another brand, category, or search.</p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>© 2023 SHONON</span>
+      </footer>
+    </main>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal-backdrop hidden" id="modalBackdrop"></div>
+  <div class="modal hidden" id="modal" role="dialog" aria-modal="true" aria-label="Product details">
+    <div class="modal-head">
+      <div class="modal-title" id="modalTitle">Product</div>
+      <button class="iconBtn" id="modalClose" aria-label="Close">✕</button>
+    </div>
+
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+
+  <script src="catalog.generated.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

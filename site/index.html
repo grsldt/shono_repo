@@ -1,90 +1,144 @@
-<!doctype html>
-<html lang="fr">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SHONON — Catalog</title>
-  <meta name="description" content="SHONON — Browse items, choose size, order via WhatsApp (no payment)." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>SHONON SUPPLY — Global Wholesale Platform</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <!-- Layout -->
+
   <div class="app">
-    <!-- LEFT SIDEBAR (always visible) -->
-    <aside class="sidebar" aria-label="Brands">
+    <!-- SIDEBAR -->
+    <aside class="sidebar" aria-label="Supplier Navigation">
       <div class="sidebar-top">
-        <div class="logo" title="SHONON">S</div>
-        <div class="sidebar-title">BRANDS</div>
+        <div class="logo">S</div>
+        <div class="sidebar-title">
+          <span>SHONON</span>
+          <small class="verified-badge">DIRECT SUPPLIER</small>
+        </div>
       </div>
 
       <div class="sidebar-actions">
-        <a class="pill pill-green" id="waGeneric" target="_blank" rel="noopener">WhatsApp</a>
-        <a class="pill" id="trackLink" target="_blank" rel="noopener">Tracking</a>
+        <a class="pill pill-green" id="waGeneric" target="_blank" rel="noopener">
+          <span class="pulse-dot"></span> WhatsApp Desk (Order/MOQ)
+        </a>
+        <a class="pill" id="trackLink" target="_blank" rel="noopener">
+          Logistics Tracking
+        </a>
       </div>
+
+      <!-- Main Navigation -->
+      <button class="brand-btn home-btn active" data-brand="HOME">
+        <span class="icon">🏢</span>
+        <span>Dashboard / Home</span>
+      </button>
 
       <div class="sidebar-search">
-        <input id="brandSearch" type="search" placeholder="Search brand..." />
+        <input id="brandSearch" type="search" placeholder="Filter by brand..." autocomplete="off" />
       </div>
 
-      <nav id="brandList" class="brand-list" aria-label="Brand list"></nav>
-
-      <div class="sidebar-note">
-        <!-- You can send a photo/internet link on WhatsApp → we'll tell you if we're selling. -->
-      </div>
+      <div class="sidebar-label">FACTORY CATALOGS</div>
+      <nav id="brandList" class="brand-list" aria-label="Available brands"></nav>
     </aside>
 
-    <!-- MAIN -->
+    <!-- MAIN AREA -->
     <main class="main">
       <header class="topbar">
         <div class="topbar-left">
-          <h1 class="brandHeading" id="brandHeading">All products</h1>
-          <p class="muted" id="brandSub">
-            Click a product to see details, choose size.
-          </p>
+          <h1 class="brandHeading" id="brandHeading">Dashboard</h1>
+          <p class="muted" id="brandSub">Global and verified supply platform.</p>
         </div>
 
-        <div class="topbar-right">
+        <div class="topbar-right" id="topbarControls">
           <div class="controls">
-            <input id="search" class="control" type="search" placeholder="Search product..." />
+            <input id="search" class="control search-input" type="search" placeholder="Search model or ID..." />
             <select id="catFilter" class="control"></select>
             <select id="sortBy" class="control">
               <option value="featured">Sort: Featured</option>
-              <option value="priceLow">Sort: Price ↑</option>
-              <option value="priceHigh">Sort: Price ↓</option>
+              <option value="priceLow">Price: Low to High</option>
+              <option value="priceHigh">Price: High to Low</option>
               <option value="az">Sort: A → Z</option>
-              <option value="za">Sort: Z → A</option>
             </select>
           </div>
         </div>
       </header>
 
       <section class="content">
-        <div id="grid" class="grid" aria-live="polite"></div>
+        <!-- HOME VIEW -->
+        <div id="homeView" class="home-view">
+          
+          <!-- Bento Grid -->
+          <div class="bento-hero">
+            <div class="bento-card bento-main">
+              <span class="badge">Certified Global Sourcing</span>
+              <h2>Direct Factory Supply Chain.</h2>
+              <p>Direct access to international production lines. Exceptional sneakers, high horology, and cutting-edge technology for professionals and demanding buyers.</p>
+              <button class="btn-supplier" onclick="setBrand(null)">
+                Open General Catalog ➔
+              </button>
+            </div>
+            
+            <div class="bento-side">
+              <div class="bento-card stat-card">
+                <span class="stat-meta">SHIPPING</span>
+                <h3>Air Freight</h3>
+                <p>Secure transit with real-time global tracking.</p>
+              </div>
+              <div class="bento-card stat-card black-card">
+                <span class="stat-meta" style="color: var(--green);">NETWORK</span>
+                <h3>Dedicated Agent</h3>
+                <p>Volume negotiation and global logistics support.</p>
+              </div>
+            </div>
+          </div>
 
+          <!-- Wall of Proof -->
+          <div class="reviews-section">
+            <div class="reviews-header">
+              <div class="title-with-badge">
+                <h3>Are we legit ?</h3>
+              </div>
+              <p class="muted">Click on any delivery proof or customer feedback to view it in full size.</p>
+            </div>
+            
+            <div class="reviews-wrapper">
+              <div class="reviews-scroll" id="reviewsScroll">
+                <!-- Reviews injected by JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCTS GRID -->
+        <div id="grid" class="grid hidden"></div>
+
+        <!-- EMPTY STATE -->
         <div id="empty" class="empty hidden">
-          <h3>No products</h3>
-          <p class="muted">Try another brand, category, or search.</p>
+          <div class="empty-icon">📦</div>
+          <h3>No products or batches found</h3>
+          <p class="muted">Adjust your filters or contact a liaison agent on WhatsApp.</p>
         </div>
       </section>
 
       <footer class="footer">
-        <span>© 2023 SHONON</span>
+        <span>SHONON SUPPLY NETWORK © 2026 — Secure Wholesale Access</span>
       </footer>
     </main>
   </div>
 
-  <!-- MODAL -->
-  <div class="modal-backdrop hidden" id="modalBackdrop"></div>
-  <div class="modal hidden" id="modal" role="dialog" aria-modal="true" aria-label="Product details">
+  <!-- LIGHTBOX / PRODUCT MODAL -->
+  <div id="modalBackdrop" class="modal-backdrop hidden"></div>
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
     <div class="modal-head">
-      <div class="modal-title" id="modalTitle">Product</div>
+      <div class="modal-title" id="modalTitle">Supplier Sheet</div>
       <button class="iconBtn" id="modalClose" aria-label="Close">✕</button>
     </div>
-
     <div class="modal-body" id="modalBody"></div>
   </div>
 
+  <!-- SCRIPTS -->
+  <script src="reviews.generated.js"></script>
   <script src="catalog.generated.js"></script>
   <script src="script.js"></script>
 </body>

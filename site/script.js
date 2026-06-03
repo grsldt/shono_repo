@@ -29,8 +29,8 @@ function normCat(cat){
 }
 
 const DEFAULT_PRICE_BY_CAT = {
-  shoes: 27, tshirt: 15, sweaters: 20, pants: 15, shorts: 15, jackets: 35,
-  tracksuit: 35, electronics: 50, watch: 55, perfum: 15, cap: 15, bag: 55
+  shoes: 27, tshirt: 10, sweaters: 20, pants: 15, shorts: 15, jackets: 35,
+  tracksuit: 35, electronics: 50, watch: 55, perfum: 15, cap: 15, bag: 55, underwear: 10, goyard: 10
 };
 
 const DEFAULT_SIZES_BY_CAT = {
@@ -47,7 +47,13 @@ const $$ = (s) => Array.from(document.querySelectorAll(s));
 
 function cleanPhone(phone){ return (phone || "").replace(/[^\d]/g, ""); }
 function waLink(message){ return `https://wa.me/${cleanPhone(BRAND.whatsapp)}?text=${encodeURIComponent(message)}`; }
-function moneyUSD(n){ return typeof n === "string" ? n : `$${Number(n || 0).toFixed(2)}`; }
+
+// Fonction mise à jour pour gérer correctement les prix manquants (null)
+function moneyUSD(n){ 
+  if (n === null || n === undefined || Number.isNaN(n) || n === "NaN") return "N/A";
+  return typeof n === "string" ? n : `$${Number(n).toFixed(2)}`; 
+}
+
 function escapeHtml(str){ return String(str ?? "").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;"); }
 function titleCase(s){ return String(s || "").replaceAll("_"," ").replaceAll("-"," ").trim(); }
 
@@ -70,7 +76,8 @@ function buildAllProducts(){
           category: cat,
           title: `${brandName} ${titleCase(cat)} #${index}`,
           images: images.filter(Boolean),
-          price: DEFAULT_PRICE_BY_CAT[cat] ?? 29.99,
+          // Utilisation de null si la catégorie n'est pas trouvée
+          price: DEFAULT_PRICE_BY_CAT[cat] ?? null,
           sizes: DEFAULT_SIZES_BY_CAT[cat] || [],
           desc: "Direct factory sourcing. Order via secure WhatsApp channel."
         });

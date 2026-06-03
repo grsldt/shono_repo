@@ -1,6 +1,6 @@
 window.CATALOG = {
   "Acne Studio": {
-    "t_shirt": [
+    "tshirt": [
       [
         "Acne Studio/t_shirt/1/805a3e71-3785-48c0-8f22-52019ed4eb78.jpeg",
         "Acne Studio/t_shirt/1/0f6bfa91-9a10-4342-af29-a74f7aea8f76.jpeg",
@@ -42,7 +42,7 @@ window.CATALOG = {
     ]
   },
   "Ami": {
-    "pant": [
+    "pants": [
       [
         "Ami/pant/P10/1c3a28ad.jpg",
         "Ami/pant/P10/1b9bf267.jpg",
@@ -58,7 +58,7 @@ window.CATALOG = {
         "Ami/pant/P10/f2d59aff.jpg"
       ]
     ],
-    "sweater": [
+    "sweaters": [
       [
         "Ami/sweat/1/b05cabea-0576-4284-b0b1-39d14e4cb0fb.jpeg",
         "Ami/sweat/1/01497500-8c51-4ed3-9296-45fb505388aa.jpeg",
@@ -235,7 +235,7 @@ window.CATALOG = {
         "Ami/sweat/5/f462252e-ee83-4ec3-9fea-d1906b2ea5e6.jpeg"
       ]
     ],
-    "t_shirt": [
+    "tshirt": [
       [
         "Ami/t_shirt/1/0bf661d9-2ba7-49c4-b6eb-a6b7a4d4ec22.jpeg",
         "Ami/t_shirt/1/0284882d-fa29-4aad-9a59-d04b8e5f694c.jpeg",
@@ -380,7 +380,7 @@ window.CATALOG = {
     ]
   },
   "Arcteryx": {
-    "jacket": [
+    "jackets": [
       [
         "Arcteryx/jacket/1/Screenshot from 2026-01-14 23-54-51.png",
         "Arcteryx/jacket/1/Screenshot from 2026-01-14 23-55-01.png",
@@ -627,7 +627,7 @@ window.CATALOG = {
     ]
   },
   "Essentials": {
-    "pant": [
+    "pants": [
       [
         "Essentials/pant/p1 - Copie (6)/617527ce.jpg",
         "Essentials/pant/p1 - Copie (6)/2c10ac9d.jpg",
@@ -991,7 +991,7 @@ window.CATALOG = {
       ],
 
     ],
-      "jacket" : [
+      "jackets" : [
       [
         "RUNNING/c1/Image_20260106124858_194_4.jpg",
         "RUNNING/c1/Image_20260106124900_196_4.jpg",
@@ -1015,7 +1015,7 @@ window.CATALOG = {
       ],
     ],
 
-    "sweater" : [
+    "sweaters" : [
       [
         "RUNNING/v1/1775c982.jpg",
         "RUNNING/v1/2fd911f3.jpg",
@@ -1210,12 +1210,12 @@ window.CATALOG = {
         "Ralph lauren/cap/2/555555.webp"
       ]
     ],
-    "shirt": [
+    "tshirt": [
       [
         "Ralph lauren/chemise/1/Screenshot from 2026-01-15 01-31-44.png"
       ]
     ],
-    "jacket": [
+    "jackets": [
       [
         "Ralph lauren/jacket/1/Screenshot from 2026-01-15 00-05-55.png",
         "Ralph lauren/jacket/1/Screenshot from 2026-01-15 00-06-03.png",
@@ -1230,7 +1230,7 @@ window.CATALOG = {
         "Ralph lauren/jacket/1/Screenshot from 2026-01-15 00-07-07.png"
       ]
     ],
-    "pant": [
+    "pants": [
       [
         "Ralph lauren/pant/1/Screenshot from 2026-01-15 01-24-58.png"
       ],
@@ -1250,7 +1250,7 @@ window.CATALOG = {
         "Ralph lauren/pant/p11/f7bcb329.jpg"
       ]
     ],
-    "short": [
+    "shorts": [
       [
         "Ralph lauren/short/1/Screenshot from 2026-01-15 01-09-14.png",
         "Ralph lauren/short/1/Screenshot from 2026-01-15 01-09-29.png",
@@ -1293,7 +1293,7 @@ window.CATALOG = {
         "Ralph lauren/short/4/Screenshot from 2026-01-15 01-15-25.png"
       ]
     ],
-    "sweater": [
+    "sweaters": [
       [
         "Ralph lauren/sweat/1/Screenshot from 2026-01-15 01-16-57.png",
         "Ralph lauren/sweat/1/Screenshot from 2026-01-15 01-17-13.png",
@@ -1480,7 +1480,7 @@ window.CATALOG = {
     ]
   },
   "Stone island": {
-    "pant": [
+    "pants": [
       [
         "Stone island/pant/1/Screenshot from 2026-01-15 01-45-25.png",
         "Stone island/pant/1/Screenshot from 2026-01-15 01-45-31.png",
@@ -1492,7 +1492,7 @@ window.CATALOG = {
         "Stone island/pant/2/Screenshot from 2026-01-15 01-46-50.png"
       ]
     ],
-    "short": [
+    "shorts": [
       [
         "Stone island/short/1/Screenshot from 2026-01-15 01-43-57.png",
         "Stone island/short/1/Screenshot from 2026-01-15 01-44-01.png",
@@ -1503,7 +1503,7 @@ window.CATALOG = {
         "Stone island/short/2/Screenshot from 2026-01-15 01-44-46.png"
       ]
     ],
-    "sweater": [
+    "sweaters": [
       [
         "Stone island/sweat/1/Screenshot from 2026-01-15 01-37-48.png",
         "Stone island/sweat/1/Screenshot from 2026-01-15 01-37-59.png",
@@ -1568,7 +1568,7 @@ window.CATALOG = {
     ]
   },
   "THe north face": {
-    "jacket": [
+    "jackets": [
       [
         "THe north face/jacket/1/Screenshot from 2026-01-15 00-11-40.png",
         "THe north face/jacket/1/Screenshot from 2026-01-15 00-12-08.png",
@@ -1784,7 +1784,7 @@ window.CATALOG = {
     ]
   },
   "canada goose": {
-    "jacket": [
+    "jackets": [
       [
         "canada goose/jacket/1/Screenshot from 2026-01-11 16-29-39.png",
         "canada goose/jacket/1/Screenshot from 2026-01-11 16-30-08.png",
@@ -2092,7 +2092,7 @@ window.CATALOG = {
     ]
   },
   "cdg": {
-    "pant": [
+    "pants": [
       [
         "cdg/pant/p1 - Copie (8)/94a06484.jpg",
         "cdg/pant/p1 - Copie (8)/093f487b.jpg",
@@ -2106,7 +2106,7 @@ window.CATALOG = {
         "cdg/pant/p1 - Copie (8)/db39e20d.jpg"
       ]
     ],
-    "sweater": [
+    "sweaters": [
       [
         "cdg/sweat/1/7db579ba-e25c-4fb4-af7a-90c5ee8cc2d2.jpeg",
         "cdg/sweat/1/04d7c5c5-2829-4e82-93e5-20132c48b65c.jpeg",
@@ -2341,7 +2341,7 @@ window.CATALOG = {
     ]
   },
   "lacoste": {
-    "pant": [
+    "pants": [
       [
         "lacoste/pant/dossier1/123cf810.jpg",
         "lacoste/pant/dossier1/0086e0dc.jpg",
@@ -2415,7 +2415,7 @@ window.CATALOG = {
         "lacoste/pant/dossier2/fc59c5da.jpeg"
       ]
     ],
-    "short": [
+    "shorts": [
       [
         "lacoste/short/dossier1/186ca147.jpeg",
         "lacoste/short/dossier1/0a5193e4.jpeg",
@@ -2562,7 +2562,7 @@ window.CATALOG = {
         "lacoste/short/dossier4/fd0aabd0.jpg"
       ]
     ],
-    "sweater": [
+    "sweaters": [
       [
         "lacoste/sweat/dossier1/01ddf9c8.jpg",
         "lacoste/sweat/dossier1/0175b752.jpg",
@@ -2934,7 +2934,7 @@ window.CATALOG = {
     ]
   },
   "moncler": {
-    "jacket": [
+    "jackets": [
       [
         "moncler/jacket/1/Screenshot from 2026-01-11 17-54-04.png",
         "moncler/jacket/1/Screenshot from 2026-01-11 17-54-17.png",
@@ -3184,7 +3184,7 @@ window.CATALOG = {
     ]
   },
   "nike": {
-    "jacket": [
+    "jackets": [
       [
         "nike/jacket/1/Screenshot from 2026-01-14 23-45-12.png",
         "nike/jacket/1/Screenshot from 2026-01-14 23-45-22.png",
@@ -3245,7 +3245,7 @@ window.CATALOG = {
         "nike/jacket/4/Screenshot from 2026-01-14 23-53-49.png"
       ]
     ],
-    "pant": [
+    "pants": [
       [
         "nike/pant/1/Screenshot from 2026-01-15 00-33-44.png",
         "nike/pant/1/Screenshot from 2026-01-15 00-33-59.png"
@@ -3409,7 +3409,7 @@ window.CATALOG = {
         "nike/sport(tracksuit)/9/Screenshot from 2026-01-15 00-21-08.png"
       ]
     ],
-    "sweater": [
+    "sweaters": [
       [
         "nike/sweat/1/Screenshot from 2026-01-15 00-30-02.png",
         "nike/sweat/1/Screenshot from 2026-01-15 00-30-20.png",
@@ -3458,7 +3458,7 @@ window.CATALOG = {
     ]
   },
   "pantagonia": {
-    "jacket": [
+    "jackets": [
       [
         "pantagonia/jacket/1/f2260415-f894-4310-9b41-d7216b7a7a51 (Copy).jpeg",
         "pantagonia/jacket/1/00715cfb-d1d3-4b34-8e56-b71e5926d353.jpeg",
@@ -3545,7 +3545,7 @@ window.CATALOG = {
         "pantagonia/jacket/1/fa29dd07-189a-4940-b89d-6b9743bee583 (Copy).jpeg"
       ]
     ],
-    "sweater": [
+    "sweaters": [
       [
         "pantagonia/sweat/1/08affe68-700c-4033-b01e-269c8b61c6b7.jpeg",
         "pantagonia/sweat/1/074aeab4-4761-44df-ba0d-b04bbcc76b8f.jpeg",
@@ -3608,7 +3608,7 @@ window.CATALOG = {
         "pantagonia/sweat/1/f863ba7c-db5e-481b-b15d-15ca8dfd14a7.jpeg"
       ]
     ],
-    "t-shirt": [
+    "tshirt": [
       [
         "pantagonia/t-shirt/1/1b500433-b1a9-40d9-81da-e9e31ea48c72.jpeg",
         "pantagonia/t-shirt/1/c7275761-e39e-41ee-8c39-5d8cf2eed789.png",
@@ -3690,12 +3690,12 @@ window.CATALOG = {
     ]
   },
   "stussy": {
-    "pant": [
+    "pants": [
       [
         "stussy/pant/1/Screenshot from 2026-01-15 00-47-01.png"
       ]
     ],
-    "sweat": [
+    "sweaters": [
       [
         "stussy/sweat/1/Screenshot from 2026-01-15 00-44-25.png",
         "stussy/sweat/1/Screenshot from 2026-01-15 00-44-32.png",
@@ -3718,7 +3718,7 @@ window.CATALOG = {
         "stussy/sweat/5/Screenshot from 2026-01-15 00-47-29.png"
       ]
     ],
-    "t shirt": [
+    "tshirt": [
       [
         "stussy/t shirt/1/Screenshot from 2026-01-15 00-38-57.png"
       ],
